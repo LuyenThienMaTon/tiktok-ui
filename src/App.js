@@ -5,7 +5,7 @@ import { DefaultLayout } from '~/components/Layout';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/tiktok-ui'>
       <div className="App">
         <Routes>
           {publicRoutes.map((route, index) => {
