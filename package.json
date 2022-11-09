@@ -2,6 +2,7 @@
   "name": "tiktok",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thauthien.github.io/tiktok-ui/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "babel-plugin-module-resolver": "^4.1.0",
     "customize-cra": "^1.0.0",
+    "gh-pages": "^4.0.0",
     "react-app-rewired": "^2.2.1",
     "sass": "^1.55.0"
   },
@@ -24,7 +26,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
